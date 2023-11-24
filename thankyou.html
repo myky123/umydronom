@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+        />
+        <meta name="author" content="Myky" />
+        <meta name="description" content="The official umydronom.sk website" />
+        <title>umydronom.sk</title>
+        <link rel="stylesheet" href="styles/shared.prod.css" />
+        <link rel="stylesheet" href="styles/main.prod.css" />
+        <script src="js/main.js" defer></script>
+    </head>
+
+    <body>
+        <div class="backdrop"></div>
+        <div class="mobile-nav">
+            <ul class="mobile-nav__ul">
+                <li>
+                    <a href="index.html">Domov</a>
+                </li>
+                <li>
+                    <a href="about.html">O nás</a>
+                </li>
+                <li>
+                    <a href="services.html">Služby</a>
+                </li>
+            </ul>
+        </div>
+
+        <header class="header">
+            <div class="header__line"></div>
+
+            <a href="index.html" class="header__logo-container">
+                <img
+                    src="./Icons/umydronom-original-icon_500x323.png"
+                    alt="Logo of drone"
+                    width="500"
+                    height="323"
+                />
+            </a>
+
+            <div class="header__nav-container">
+                <div class="header__squeege-container">
+                    <img
+                        src="./Icons/squeege-icon_512x512.png"
+                        alt="Squeege icon"
+                        width="512"
+                        height="512"
+                    />
+                </div>
+
+                <!-- Main navigation -->
+                <nav class="header__nav">
+                    <ul class="header__ul">
+                        <li>
+                            <a href="index.html">Domov</a>
+                        </li>
+                        <li>
+                            <a href="about.html">O nás</a>
+                        </li>
+                        <li>
+                            <a href="services.html">Služby</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <!-- Hamburger button -->
+                <button
+                    id="hb-btn"
+                    class="hb-btn no-select"
+                    onclick="openMobileNav(); openModal();"
+                >
+                    <span class="hb-btn__line"></span>
+                    <span class="hb-btn__line"></span>
+                    <span class="hb-btn__line"></span>
+                </button>
+            </div>
+        </header>
+
+        <main class="thankyou__container">
+            <h1 id="thankyou__message"></h1>
+            <!-- <h1 class="thankyou__review-message">
+                Ďakujeme za vaše hodnotenie, coskoro sa vam ozveme
+            </h1> -->
+            <a href="index.html">&larr; Späť</a>
+        </main>
+
+        <footer class="footer__container">
+            <div class="footer__box">
+                <div class="footer__logo-container">
+                    <a>
+                        <img
+                            src="./Icons/umydronom-no-text-icon_500x323.png"
+                            alt="Logo of drone"
+                            width="500"
+                            height="323"
+                            class="footer__logo"
+                        />
+                    </a>
+                </div>
+
+                <div class="footer__nav">
+                    <p class="footer__title">Umydronom.sk</p>
+                    <a href="index.html">Domov</a>
+                    <a href="about.html">O nás</a>
+                    <a href="services.html">Služby</a>
+                </div>
+
+                <div class="footer__nav">
+                    <p class="footer__title">Follow us</p>
+                    <a href="www.instagram.com">
+                        <img
+                            src="./Icons/instagram-icon_512x512.png"
+                            alt="Instagram icon"
+                            width="512"
+                            height="512"
+                            class="footer__icon"
+                        />
+                    </a>
+                    <a href="www.facebook.com">
+                        <img
+                            src="./Icons/facebook-icon_512x512.png"
+                            alt="Facebook icon"
+                            width="512"
+                            height="512"
+                            class="footer__icon"
+                        />
+                    </a>
+                </div>
+            </div>
+
+            <div class="horizontal-breakup-line"></div>
+
+            <div class="footer__copyright">
+                <p>Umydronom.sk 2023</p>
+            </div>
+        </footer>
+    </body>
+</html>
