@@ -190,10 +190,13 @@ a {
         0.9vw + 0.65rem,
         1.313rem
     ); /* Font size */ /*mp(1rem, 0.9vw + 0.6rem, 1.313rem);*/
+    --FS-XL: 2.2rem;
     --FS-L: 2rem;
+    --FS-MM: 1.4rem;
     --FS-M: 1.2rem;
     --FS-XM: 1rem;
     --FS-XXM: 0.8rem;
+    --FS-XXXM: 0.7rem;
 
     /* MARGINS */
     --MS-M: 1rem;

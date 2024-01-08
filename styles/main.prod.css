@@ -80,11 +80,22 @@
     transform: skew(var(--SKEW-ANGLE-NEGATIVE));
 }
 
+.hero__slogan span {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 6%;
+    -webkit-transform: skew(var(--SKEW-ANGLE-POSITIVE));
+    -ms-transform: skew(var(--SKEW-ANGLE-POSITIVE));
+    transform: skew(var(--SKEW-ANGLE-POSITIVE));
+    font-size: var(--FS-XXM);
+}
+
 .hero__slogan p {
     -webkit-transform: skew(var(--SKEW-ANGLE-POSITIVE));
     -ms-transform: skew(var(--SKEW-ANGLE-POSITIVE));
     transform: skew(var(--SKEW-ANGLE-POSITIVE));
-    font-size: var(--FS-M);
+    font-size: var(--FS-MM);
     font-style: italic;
 }
 
@@ -173,8 +184,12 @@
         width: 75%;
     }
 
+    .hero__slogan span {
+        font-size: var(--FS-XM);
+    }
+
     .hero__slogan p {
-        font-size: var(--FS-L);
+        font-size: var(--FS-XL);
     }
 
     .button--hero {
@@ -202,6 +217,10 @@
 
     .hero__slogan {
         top: 38%;
+    }
+
+    .hero__slogan span {
+        font-size: var(--FS-XXM);
     }
 
     .button--hero {
@@ -350,7 +369,7 @@
     text-align: center;
     color: white;
     line-height: 1.7rem;
-    font-size: var(--FS-XM);
+    font-size: var(--FS-XXM);
 }
 
 .drone-washing-advantages {
@@ -411,11 +430,11 @@
 @media (min-width: 40rem) {
     .drone-washing__description {
         width: 75%;
-        font-size: var(--FS-M);
+        font-size: var(--FS-XM);
     }
 
     .drone-washing-advantages ul {
-        font-size: var(--FS-M);
+        font-size: var(--FS-XM);
     }
 }
 /* || CONTACT SECTION */
@@ -1053,7 +1072,7 @@
 
 .add-comment__box {
     width: 100%;
-    padding-bottom: var(--PS-XXL);
+    padding: var(--PS-XXL);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1087,9 +1106,11 @@
     .au-reviews__box {
         -webkit-box-align: start;
         -ms-flex-align: start;
-        align-items: flex-start;
+        /* align-items: flex-start; initial */
+        align-items: center;
         -webkit-box-pack: start;
         -ms-flex-pack: start;
+        /* justify-content: flex-start;  */
         justify-content: flex-start;
     }
 
