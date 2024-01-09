@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+        />
+        <meta name="author" content="Mykyno" />
+        <meta name="description" content="The official umydronom.sk website" />
+        <meta name="”format-detection”" content='”telephone"="no”' />
+        <title>umydronom.sk</title>
+        <link rel="stylesheet" href="styles/shared.prod.css" />
+        <link rel="stylesheet" href="styles/main.prod.css" />
+        <script src="js/main.js" defer></script>
+    </head>
+
+    <body>
+        <div class="backdrop"></div>
+        <div class="mobile-nav">
+            <ul class="mobile-nav__ul">
+                <li>
+                    <a href="index.html">Domov</a>
+                </li>
+                <li>
+                    <a class="active-script" href="about.html">O nás</a>
+                </li>
+                <li>
+                    <a href="services.html">Služby</a>
+                </li>
+            </ul>
+        </div>
+
+        <header class="header">
+            <div class="header__line"></div>
+
+            <a href="index.html" class="header__logo-container">
+                <img
+                    src="./Icons/umydronom-original-icon_500x323.png"
+                    alt="Logo"
+                    width="500"
+                    height="323"
+                />
+            </a>
+
+            <div class="header__nav-container">
+                <div class="header__squeege-container">
+                    <img
+                        src="./Icons/squeege-icon_512x512.png"
+                        alt="squeege animation"
+                        width="512"
+                        height="512"
+                    />
+                </div>
+
+                <!-- Main navigation -->
+                <nav class="header__nav">
+                    <ul class="header__ul">
+                        <li>
+                            <a href="index.html">Domov</a>
+                        </li>
+                        <li>
+                            <a class="active-script" href="about.html">O nás</a>
+                        </li>
+                        <li>
+                            <a href="services.html">Služby</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <!-- Hamburger button -->
+                <button
+                    id="hb-btn"
+                    class="hb-btn no-select"
+                    onclick="openMobileNav(); openModal();"
+                >
+                    <span class="hb-btn__line"></span>
+                    <span class="hb-btn__line"></span>
+                    <span class="hb-btn__line"></span>
+                </button>
+            </div>
+        </header>
+
+        <section class="welcome-container">
+            <p class="welcome-title">O nás</p>
+            <p>
+                Sme kolektív mladých a kreatívnych ľudí, ktorí sa zaujímajú o
+                nové technológie po všetkých stránkach. Práve z tohto dôvodu vám
+                prinášame ako jedna z prvých firiem na slovensku tento revolučný
+                spôsob umývania.
+            </p>
+        </section>
+
+        <main>
+            <section class="au-reviews__container">
+                <p class="au-reviews__title">Hodnotenie zákazníkov</p>
+                <div class="au-reviews__box">
+                    <div class="au-review__bubble">
+                        <div class="au-review__bubble-info">
+                            <img
+                                class="review-icon"
+                                src="./Icons/woman1-icon_512x512.png"
+                                alt="Woman icon"
+                                width="512"
+                                height="512"
+                            />
+                            <p class="review-name">Silvia</p>
+                            <div class="review-stars__container">
+                                <img
+                                    class="review-star"
+                                    src="./Icons/star-full-icon_512x512.png"
+                                />
+                                <img
+                                    class="review-star"
+                                    src="./Icons/star-full-icon_512x512.png"
+                                />
+                                <img
+                                    class="review-star"
+                                    src="./Icons/star-full-icon_512x512.png"
+                                />
+                                <img
+                                    class="review-star"
+                                    src="./Icons/star-full-icon_512x512.png"
+                                />
+                                <img
+                                    class="review-star"
+                                    src="./Icons/star-empty-icon_512x512.png"
+                                />
+                            </div>
+                        </div>
+                        <div class="au-review__bubble-comment">
+                            <p>
+                                Absolútna spokojnosť s ponuknutými službami.
+                                Firma prišla skoro ráno a práca bola hotová za
+                                pár hodín, vrelo odporúčam.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- <div
+                        class="horizontal-breakup-line horizontal-breakup-line--au"
+                    ></div>
+
+                    <div class="au-review__bubble au-review__bubble--even">
+                        <div class="au-review__bubble-info">
+                            <img
+                                class="review-icon"
+                                src="./Icons/man-icon_512x512.png"
+                                alt="Man icon"
+                                width="512"
+                                height="512"
+                            />
+                            <p class="review-name">Martin</p>
+                            <div class="review-stars__container">
+                                <img
+                                    class="review-star"
+                                    src="./Icons/star-full-icon_512x512.png"
+                                    alt="Star icon"
+                                    width="512"
+                                    height="512"
+                                />
+                                <img
+                                    class="review-star"
+                                    src="./Icons/star-full-icon_512x512.png"
+                                    alt="Star icon"
+                                    width="512"
+                                    height="512"
+                                />
+                                <img
+                                    class="review-star"
+                                    src="./Icons/star-full-icon_512x512.png"
+                                    alt="Star icon"
+                                    width="512"
+                                    height="512"
+                                />
+                                <img
+                                    class="review-star"
+                                    src="./Icons/star-full-icon_512x512.png"
+                                    alt="Star icon"
+                                    width="512"
+                                    height="512"
+                                />
+                                <img
+                                    class="review-star"
+                                    src="./Icons/star-half-icon_512x512.png"
+                                    alt="Star icon"
+                                    width="512"
+                                    height="512"
+                                />
+                            </div>
+                        </div>
+                        <div class="au-review__bubble-comment">
+                            <p>
+                                Absolútna spokojnosť s ponuknutými službami.
+                                Firma prišla skoro ráno a práca bola hotová za
+                                pol hodinky, vrelo odporúčam.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div
+                        class="horizontal-breakup-line horizontal-breakup-line--au"
+                    ></div>
+
+                    <div class="au-review__bubble au-review__bubble--last">
+                        <div class="au-review__bubble-info">
+                            <img
+                                class="review-icon"
+                                src="./Icons/woman2-icon_512x512.png"
+                                alt="Woman icon"
+                                width="512"
+                                height="512"
+                            />
+                            <p class="review-name">Mária</p>
+                            <div class="review-stars__container">
+                                <img
+                                    class="review-star"
+                                    src="./Icons/star-full-icon_512x512.png"
+                                    alt="Star icon"
+                                    width="512"
+                                    height="512"
+                                />
+                                <img
+                                    class="review-star"
+                                    src="./Icons/star-full-icon_512x512.png"
+                                    alt="Star icon"
+                                    width="512"
+                                    height="512"
+                                />
+                                <img
+                                    class="review-star"
+                                    src="./Icons/star-full-icon_512x512.png"
+                                    alt="Star icon"
+                                    width="512"
+                                    height="512"
+                                />
+                                <img
+                                    class="review-star"
+                                    src="./Icons/star-half-icon_512x512.png"
+                                    alt="Star icon"
+                                    width="512"
+                                    height="512"
+                                />
+                                <img
+                                    class="review-star"
+                                    src="./Icons/star-empty-icon_512x512.png"
+                                    alt="Star icon"
+                                    width="512"
+                                    height="512"
+                                />
+                            </div>
+                        </div>
+                        <div class="au-review__bubble-comment">
+                            <p>
+                                Absolútna spokojnosť s ponuknutými službami.
+                                Firma prišla skoro ráno a práca bola hotová za
+                                pol hodinky, vrelo odporúčam.
+                            </p>
+                        </div>
+                    </div> -->
+
+                    <div class="add-comment__box blink_me">
+                        <a href="review.html" class="add-comment__button"
+                            >Pridaj komentár</a
+                        >
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact" class="contact contact--bright-background">
+                <p class="contact__title">Kontakt</p>
+
+                <p class="contact__intro">
+                    Ak ste vlastníkom budovy, developerom, správcom budov,
+                    upratovacou spoločnosťou so zmluvami alebo potrebami na
+                    čistenie okien a hľadáte spôsob, ako znížiť náklady a
+                    vytvoriť bezpečnejší spôsob vykonávania tejto služby, potom
+                    máme pre vás riešenie.
+
+                    <br />
+                    <br />
+
+                    Naša spoločnosť má mnoho spôsobov, ako môžeme túto službu
+                    poskytovať priamo a nepriamo. Či už ste priamy klient, ktorý
+                    hľadá jednorazovú službu, stavebná spoločnosť, ktorá hľadá
+                    dlhodobejšie zmluvy na dobu určitú, developer a vlastník
+                    budovy, ktorí chcú znížiť náklady, alebo ste len zvedaví a
+                    chcete túto technológiu preskúmať, aby ste zistili, ako ju
+                    možno zlepšiť.Kontaktujte nás a veľmi radi pomôžeme nájsť
+                    najlepšie nákladovo efektívne a bezpečnejšie riešenie vašich
+                    potrieb.
+                </p>
+
+                <div class="horizontal-breakup-line"></div>
+
+                <div class="contact__container">
+                    <div class="contact__box">
+                        <!-- <p class="contact__subtitle">Kontakné informácie</p> -->
+                        <div class="contact__info-box">
+                            <img
+                                class="contact__icon"
+                                src="./Icons/phone-icon_512x512png.png"
+                                alt="Phone icon"
+                                width="512"
+                                height="512"
+                            />
+                            <a href="tel:0917785144">Mobil: 0917785144</a>
+                            <br />
+                            <a href="tel:0904797516">Mobil: 0904797516</a>
+                        </div>
+                        <div class="contact__info-box">
+                            <img
+                                class="contact__icon"
+                                src="./Icons/email-icon_512x512.png"
+                                alt="Email icon"
+                                width="512"
+                                height="512"
+                            />
+                            <a href="mailto: umydronom@gmail.com"
+                                >Email: umydronom@gmail.com</a
+                            >
+                        </div>
+                    </div>
+
+                    <div class="breakup-line"></div>
+
+                    <div class="contact__box contact__box--form">
+                        <p class="contact__subtitle">Napíšte nám</p>
+
+                        <form
+                            class="form"
+                            action="https://formsubmit.co/m.podolak14@gmail.com"
+                            method="POST"
+                        >
+                            <div class="form__box">
+                                <label for="email" class="contact__label"
+                                    >Email:</label
+                                >
+
+                                <input
+                                    type="email"
+                                    name="User's email"
+                                    autocomplete="Empty-email"
+                                    id="email"
+                                    class="contact__input"
+                                    placeholder="Vaša emailová adresa"
+                                    required
+                                />
+
+                                <input
+                                    type="hidden"
+                                    name="_next"
+                                    value="https://www.umydronom.sk/thankyou.html"
+                                />
+                            </div>
+
+                            <div class="form__box">
+                                <label for="message" class="contact__label"
+                                    >Obsah správy:</label
+                                >
+
+                                <textarea
+                                    name="User's message"
+                                    autocomplete="Empty-message"
+                                    id="message"
+                                    class="form__textarea"
+                                    cols="20"
+                                    rows="10"
+                                    placeholder="Vaša správa"
+                                ></textarea>
+                            </div>
+
+                            <div class="button__box">
+                                <button
+                                    onclick="printContactMessage()"
+                                    class="form__button"
+                                    type="submit"
+                                >
+                                    Odoslať
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer__container footer__container--dark-background">
+            <div class="footer__box">
+                <div class="footer__logo-container">
+                    <a>
+                        <img
+                            src="./Icons/umydronom-no-text-icon-bright_500x323.png"
+                            alt="Logo"
+                            width="500"
+                            height="323"
+                            class="footer__logo"
+                        />
+                    </a>
+                </div>
+
+                <div class="footer__nav">
+                    <p class="footer__title">Umydronom.sk</p>
+                    <a href="index.html">Domov</a>
+                    <a href="about.html">O nás</a>
+                    <a href="services.html">Služby</a>
+                </div>
+
+                <div class="footer__nav">
+                    <p class="footer__title">Follow us</p>
+                    <a href="www.instagram.com">
+                        <img
+                            src="./Icons/instagram-icon_512x512.png"
+                            alt="Instagram icon"
+                            width="512"
+                            height="512"
+                            class="footer__icon"
+                        />
+                    </a>
+                    <a href="www.facebook.com">
+                        <img
+                            src="./Icons/facebook-icon_512x512.png"
+                            alt="Facebook icon"
+                            width="512"
+                            height="512"
+                            class="footer__icon"
+                        />
+                    </a>
+                </div>
+            </div>
+
+            <div class="horizontal-breakup-line"></div>
+
+            <div class="footer__copyright">
+                <p>Umydronom.sk 2024</p>
+            </div>
+        </footer>
+    </body>
+</html>
