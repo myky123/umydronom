@@ -80,7 +80,9 @@ printContactMessage = () => {
     );
 };
 
-if (window.sessionStorage.getItem("message") !== null) {
-    document.getElementById("thankyou__message").innerHTML =
-        window.sessionStorage.getItem("message");
+if (window.sessionStorage.getItem("message")) {
+    if (document.getElementById("thankyou__message")) {
+        document.getElementById("thankyou__message").innerHTML =
+            window.sessionStorage.getItem("message");
+    }
 }
