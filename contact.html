@@ -1,105 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="referrer" content="origin" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>My Website</title>
-    <link rel="stylesheet" href="./shared.css" />
-    <link rel="stylesheet" href="./main.css" />
-  </head>
-  <body>
-    <div class="body__container">
-      <header class="main-header__container">
-        <a href="index.html" class="main-logo__container">
-          <img src="./images/umydronom.png" />
-        </a>
-        <div class="main-nav__container">
-          <!-- Hamburger button -->
-          <div class="hamburger__container">
-            <button
-              id="hamburger-button"
-              class="hamburger-button"
-              onclick="openHamburger()"
-            >
-              <span class="hamburger-button__line1"></span>
-              <span class="hamburger-button__line2"></span>
-              <span class="hamburger-button__line3"></span>
-            </button>
-          </div>
-          <nav class="main-nav">
-            <ul class="main-nav__items">
-              <li class="main-nav__item"><a href="">Služby</a></li>
-              <li class="main-nav__item"><a href="">O nás</a></li>
-              <li class="main-nav__item">
-                <a href="contact.html">Kontakt</a>
-              </li>
-            </ul>
-          </nav>
+    <head>
+        <!-- Google Tag Manager -->
+        <script>
+            (function (w, d, s, l, i) {
+                w[l] = w[l] || [];
+                w[l].push({
+                    "gtm.start": new Date().getTime(),
+                    event: "gtm.js",
+                });
+                var f = d.getElementsByTagName(s)[0],
+                    j = d.createElement(s),
+                    dl = l != "dataLayer" ? "&l=" + l : "";
+                j.async = true;
+                j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+                f.parentNode.insertBefore(j, f);
+            })(window, document, "script", "dataLayer", "GTM-W7JN4QQ9");
+        </script>
+        <!-- End Google Tag Manager -->
+
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="referrer" content="origin" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>My Website</title>
+        <link rel="stylesheet" href="./shared.css" />
+        <link rel="stylesheet" href="./main.css" />
+    </head>
+    <body>
+        <!-- Google Tag Manager (noscript) -->
+        <noscript
+            ><iframe
+                src="https://www.googletagmanager.com/ns.html?id=GTM-W7JN4QQ9"
+                height="0"
+                width="0"
+                style="display: none; visibility: hidden"
+            ></iframe
+        ></noscript>
+        <!-- End Google Tag Manager (noscript) -->
+
+        <div class="body__container">
+            <header class="main-header__container">
+                <a href="index.html" class="main-logo__container">
+                    <img src="./images/umydronom.png" />
+                </a>
+                <div class="main-nav__container">
+                    <!-- Hamburger button -->
+                    <div class="hamburger__container">
+                        <button
+                            id="hamburger-button"
+                            class="hamburger-button"
+                            onclick="openHamburger()"
+                        >
+                            <span class="hamburger-button__line1"></span>
+                            <span class="hamburger-button__line2"></span>
+                            <span class="hamburger-button__line3"></span>
+                        </button>
+                    </div>
+                    <nav class="main-nav">
+                        <ul class="main-nav__items">
+                            <li class="main-nav__item">
+                                <a href="">Služby</a>
+                            </li>
+                            <li class="main-nav__item"><a href="">O nás</a></li>
+                            <li class="main-nav__item">
+                                <a href="contact.html">Kontakt</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+            <nav class="mobile-nav">
+                <ul class="mobile-nav__items">
+                    <li class="mobile-nav__item">
+                        <a href="">Služby</a>
+                    </li>
+                    <li class="mobile-nav__item">
+                        <a href="">O nás</a>
+                    </li>
+                    <li class="mobile-nav__item mobile-nav__item--cta">
+                        <a href="contact.html">Kontakt</a>
+                    </li>
+                </ul>
+            </nav>
+            <main class="main__contact">
+                <div class="contact__intro">
+                    <!-- <img src="./images/pexels-negative-space-33999.jpg" /> -->
+                    <div class="contact__intro-container">
+                        <p class="contact-title">Kontaktné údaje</p>
+                        <ul>
+                            <li>Telefónne číslo: 000000000000</li>
+                            <li>Email: test@gmail.com</li>
+                        </ul>
+                    </div>
+                    <div class="contact-form__container">
+                        <form
+                            action="https://formsubmit.co/m.podolak14@gmail.com"
+                            method="POST"
+                            class="contact-form"
+                        >
+                            <p class="contact-title">Kontaktná forma</p>
+                            <input
+                                type="hidden"
+                                name="_subject"
+                                value="Umydronom email"
+                            />
+                            <label for="email">Emailová adresa</label>
+                            <input
+                                type="email"
+                                id="email"
+                                name="User's email"
+                                placeholder="Zadajte váš email"
+                                autocomplete="Empty-email"
+                                required
+                            />
+                            <input
+                                type="hidden"
+                                name="_next"
+                                value="https://www.umydronom.sk/thankyou.html"
+                            />
+                            <label for="text">Obsah správy</label>
+                            <textarea
+                                id="text"
+                                name="User's message"
+                                placeholder="Zadajte obsah správy"
+                                autocomplete="Empty-message"
+                                required
+                            ></textarea>
+                            <button class="submit-button" type="submit">
+                                Odoslať
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                <!-- <div></div> -->
+            </main>
+            <footer></footer>
+            <script src="./main.js"></script>
         </div>
-      </header>
-      <nav class="mobile-nav">
-        <ul class="mobile-nav__items">
-          <li class="mobile-nav__item">
-            <a href="">Služby</a>
-          </li>
-          <li class="mobile-nav__item">
-            <a href="">O nás</a>
-          </li>
-          <li class="mobile-nav__item mobile-nav__item--cta">
-            <a href="contact.html">Kontakt</a>
-          </li>
-        </ul>
-      </nav>
-      <main class="main__contact">
-        <div class="contact__intro">
-          <!-- <img src="./images/pexels-negative-space-33999.jpg" /> -->
-          <div class="contact__intro-container">
-            <p class="contact-title">Kontaktné údaje</p>
-            <ul>
-              <li>Telefónne číslo: 000000000000</li>
-              <li>Email: test@gmail.com</li>
-            </ul>
-          </div>
-          <div class="contact-form__container">
-            <form
-              action="https://formsubmit.co/m.podolak14@gmail.com"
-              method="POST"
-              class="contact-form"
-            >
-              <p class="contact-title">Kontaktná forma</p>
-              <input type="hidden" name="_subject" value="Umydronom email" />
-              <label for="email">Emailová adresa</label>
-              <input
-                type="email"
-                id="email"
-                name="User's email"
-                placeholder="Zadajte váš email"
-                autocomplete="Empty-email"
-                required
-              />
-              <input
-                type="hidden"
-                name="_next"
-                value="https://www.umydronom.sk/thankyou.html"
-              />
-              <label for="text">Obsah správy</label>
-              <textarea
-                id="text"
-                name="User's message"
-                placeholder="Zadajte obsah správy"
-                autocomplete="Empty-message"
-                required
-              ></textarea>
-              <button class="submit-button" type="submit">Odoslať</button>
-            </form>
-          </div>
-        </div>
-        <!-- <div></div> -->
-      </main>
-      <footer></footer>
-      <script src="./main.js"></script>
-    </div>
-  </body>
+    </body>
 </html>
