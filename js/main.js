@@ -1,13 +1,15 @@
 // -- VARIABLES
 const mediaQuery = window.matchMedia("(min-width: 30rem)");
+const currentYear = new Date().getFullYear();
 
-var body = document.body;
-var backdrop = document.querySelector(".backdrop");
-var mobileNavigation = document.querySelector(".mobile-nav");
-var hamburgerButton = document.querySelector(".hb-btn");
-var squeegeContainer = document.querySelector(".header__squeege-container");
-var navContainer = document.querySelector(".header__nav-container");
-var headerLine = document.querySelector(".header__line");
+let body = document.body;
+let backdrop = document.querySelector(".backdrop");
+let mobileNavigation = document.querySelector(".mobile-nav");
+let hamburgerButton = document.querySelector(".hb-btn");
+let squeegeContainer = document.querySelector(".header__squeege-container");
+let navContainer = document.querySelector(".header__nav-container");
+let headerLine = document.querySelector(".header__line");
+let currentYearSpan = document.getElementById("current-year");
 
 // -- FUNCTIONS
 
@@ -86,3 +88,6 @@ if (window.sessionStorage.getItem("message")) {
             window.sessionStorage.getItem("message");
     }
 }
+
+// Current year html element update
+currentYearSpan.textContent = currentYear;
