@@ -79,7 +79,6 @@
     -ms-transform: skew(var(--SKEW-ANGLE-NEGATIVE));
     transform: skew(var(--SKEW-ANGLE-NEGATIVE));
 }
-
 .hero__slogan span {
     position: absolute;
     width: 100%;
@@ -95,7 +94,7 @@
     -webkit-transform: skew(var(--SKEW-ANGLE-POSITIVE));
     -ms-transform: skew(var(--SKEW-ANGLE-POSITIVE));
     transform: skew(var(--SKEW-ANGLE-POSITIVE));
-    font-size: var(--FS-MM);
+    font-size: var(--FS-M);
     font-style: italic;
 }
 
@@ -184,12 +183,8 @@
         width: 75%;
     }
 
-    .hero__slogan span {
-        font-size: var(--FS-XM);
-    }
-
     .hero__slogan p {
-        font-size: var(--FS-XL);
+        font-size: var(--FS-L);
     }
 
     .button--hero {
@@ -217,10 +212,6 @@
 
     .hero__slogan {
         top: 38%;
-    }
-
-    .hero__slogan span {
-        font-size: var(--FS-XXM);
     }
 
     .button--hero {
@@ -430,11 +421,11 @@
 @media (min-width: 40rem) {
     .drone-washing__description {
         width: 75%;
-        font-size: var(--FS-XM);
+        font-size: var(--FS-M);
     }
 
     .drone-washing-advantages ul {
-        font-size: var(--FS-XM);
+        font-size: var(--FS-M);
     }
 }
 /* || CONTACT SECTION */
@@ -592,7 +583,7 @@
 
     .contact__intro {
         width: 75%;
-        font-size: var(--FS-XM);
+        font-size: var(--FS-M);
     }
 }
 
@@ -730,7 +721,7 @@
     display: -ms-flexbox;
     display: flex;
     background-color: var(--BG-BLUE-BT-COLOUR);
-    margin: var(--MS-L) 0;
+    margin: var(--MS-XM) 0;
 }
 
 .footer__logo-container {
@@ -740,7 +731,6 @@
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    /* margin: 1.5rem 0; */
 }
 
 .footer__nav {
@@ -758,7 +748,7 @@
 }
 
 .footer__nav a {
-    margin: 0.5rem 0;
+    margin: var(--MS-S) 0;
 }
 
 .footer__logo {
@@ -791,8 +781,33 @@
     justify-content: center;
 }
 
+.footer__company-info {
+    margin: var(--MS-M) 0 var(--MS-S) 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    justify-items: center;
+}
+
+.footer__company-info p {
+    margin: var(--MS-S) 0;
+}
+
+.highlight {
+    font-weight: bold;
+    font-size: var(--FS-XM);
+}
+
 @media (min-width: 40rem) {
     .footer__box {
+        width: 100%;
         -webkit-box-orient: horizontal;
         -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -800,11 +815,22 @@
     }
 
     .footer__logo-container {
+        width: 30%;
         margin: var(--MS-XM) 0;
     }
 
     .footer__nav {
+        width: 30%;
         margin: var(--MS-M) 0;
+    }
+
+    .footer__company-info {
+        width: 30%;
+        margin: var(--MS-M) 0;
+    }
+
+    .highlight {
+        font-size: var(--FS-M);
     }
 }
 
@@ -1072,7 +1098,7 @@
 
 .add-comment__box {
     width: 100%;
-    padding: var(--PS-XXL);
+    padding-bottom: var(--PS-XXL);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1106,11 +1132,9 @@
     .au-reviews__box {
         -webkit-box-align: start;
         -ms-flex-align: start;
-        /* align-items: flex-start; initial */
-        align-items: center;
+        align-items: flex-start;
         -webkit-box-pack: start;
         -ms-flex-pack: start;
-        /* justify-content: flex-start;  */
         justify-content: flex-start;
     }
 
