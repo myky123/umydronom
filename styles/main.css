@@ -575,6 +575,7 @@
 }
 
 .footer__company-info p {
+    pointer-events: none;
     text-decoration: none;
     margin: var(--MS-S) 0;
 }
