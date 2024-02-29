@@ -797,6 +797,8 @@
 }
 
 .footer__company-info p {
+    color: white;
+    text-decoration: none;
     margin: var(--MS-S) 0;
 }
 
