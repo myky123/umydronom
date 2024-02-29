@@ -797,8 +797,9 @@
 }
 
 .footer__company-info p {
-    text-decoration: none;
     margin: var(--MS-S) 0;
+    pointer-events: none;
+    text-decoration: none !important;
 }
 
 .highlight {
@@ -832,12 +833,6 @@
 
     .highlight {
         font-size: var(--FS-M);
-    }
-
-    .footer__company-info p {
-        pointer-events: none;
-        text-decoration: none !important;
-        margin: var(--MS-S) 0;
     }
 }
 
