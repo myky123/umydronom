@@ -801,7 +801,7 @@
 
 .add-comment__box {
     width: 100%;
-    padding-bottom: var(--PS-XXL);
+    padding: var(--PS-L);
     display: flex;
     align-items: center;
     justify-content: center;
